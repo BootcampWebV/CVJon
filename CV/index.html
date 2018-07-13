@@ -11,33 +11,47 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700,800" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="./js/CV.js" type="module"></script>
 </head>
 
 <body>
-    <header>
-        <h1 class="h1-main">CV Jon San Roman</h1>
-    </header>
-    <nav id="top-menu" class="menu-top">
-        <ul>
-            <li>
-                <a href="">Quién soy</a>
-            </li>
-            <li>
-                <a href="">Estudios</a>
-            </li>
-            <li>
-                <a href="">Experiencia</a>
-            </li>
-            <li>
-                <a href="">Sobre mí</a>
-            </li>
-            <li>
-                <a href="">Contacto</a>
-            </li>
-        </ul>
+    <div class="title-wrapper">
+        <header>
+            <h1 class="h1-main">CV Jon San Roman</h1>
+            <nav id="top-menu" class="menu-top">
+                <ul>
+                    <li>
+                        <a href="./index.html#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#about">Quién soy</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#studies">Estudios</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#experience">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#video-about-me">Sobre mí</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
+    </div>
+    <section id="home">
+        <header>
+            <div class="title-wrapper">
+                <h1 class="h1-section">CV Jon San Roman</h1>
+                <p>Toda la información profesional</p>
+            </div>
+        </header>
+    </section>
 
-    </nav>
 
     <section id="about">
         <header>
@@ -46,29 +60,119 @@
                 <p>Este soy yo</p>
             </div>
         </header>
+
         <div class="content-wrapper">
             <p>Persona seria, responsable y con muchas ganas de trabajar y aprender, con don de gentes y comunicativo. Me considero capaz de liderar y trabajar en equipo, además de organizar correctamente los distintos proyectos derivados de la actividad
                 profesional.
             </p>
             <p>Me interesa especialmente la programación y el desarrollo, por lo que siempre estoy buscando nuevos retos e iniciativas que me sirvan para aprender y mejorar mis capacidades y así poder participar en proyectos más complejos e interesantes.</p>
         </div>
+        </div>
     </section>
     <section id="studies">
         <header>
             <div class="title-wrapper">
                 <h1 class="h1-section">Estudios</h1>
-                <p>Todo lo que se</p>
+                <p>Todo lo que sé</p>
+            </div>
+        </header>
+        <div class="grid">
+            <div class="content-wrapper">
+                <div class="grid-item">
+                    <h2>Full Stack Web Development</h2>
+                    <p>Master en todas las competencias necesarias para realizar un buen desarrollo web.</p>
+                    <footer>
+                        <p>Fechas:
+                            <span class="study-datatime">2018-Presente</span>
+                        </p>
+                    </footer>
+                </div>
+                <div class="grid-item">
+                    <h2>DAM</h2>
+                    <p>Desarrollo de Aplicaciones Multiplataforma.</p>
+                    <footer>
+                        <p>Fechas:
+                            <span class="study-datatime">2016-2018</span>
+                        </p>
+                    </footer>
+                </div>
+                <div class="grid-item">
+                    <h2>Economía</h2>
+                    <p>Cursado hasta el tercer curso del grado en economía.</p>
+                    <footer>
+                        <p>Fechas:
+                            <span class="study-datatime">2012-2015</span>
+                        </p>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <header>
+            <div class="title-wrapper">
+                <h1 class="h1-section">Experiencia</h1>
+                <p>Proyectos en los que he participado</p>
+            </div>
+        </header>
+        <div class="grid">
+            <div class="content-wrapper">
+                <div class="grid-item">
+                    <h2>Freelance Web Developer</h2>
+                    <p>Desarrollo Web, SEO y Marketing digital completo para empresas y negocios.</p>
+                    <footer>
+                        <p>Fechas:
+                            <span class="study-datatime">2018-Presente</span>
+                        </p>
+                    </footer>
+                </div>
+                <div class="grid-item">
+                    <h2>Desarrollador Web, SEO</h2>
+                    <p>Desarrollo web, posicionamiento SEO y marketing digital de distintas empresas.</p>
+                    <footer>
+                        <p>Fechas:
+                            <span class="study-datatime">2018ene-2018jun</span>
+                        </p>
+                    </footer>
+                </div>
+                <div class="grid-item">
+                    <h2>Jugador profesional de poker</h2>
+                    <p>Nivel profesional. Gestión de fondos. Estudio y desarrollo del juego de forma teórica.</p>
+                    <footer>
+                        <p>Fechas:
+                            <span class="study-datatime">2013-Presente</span>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-about-me">
+        <header>
+            <div class="title-wrapper">
+                <h1 class="h1-section">Conóceme</h1>
+                <p>Video sobre mis aficiones</p>
             </div>
         </header>
         <div class="content-wrapper">
-            <div class="study">
-                <h2>Full Stack Web Development</h2>
-                <p>Master en todas las competencias necesarias para realizar un buen desarrollo web.</p>
-                <footer>
-                    <p>Fechas:
-                        <span class="study-datatime">2018-Presente</span>
-                    </p>
-                </footer>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3YU8uogEXaE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <header>
+            <div class="title-wrapper">
+                <h1 class="h1-section">Contáctame</h1>
+                <p>Todos mis datos y lugares donde puedes encontrarme</p>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <div class="contact-info">
+                <h2>Formulario de contacto</h2>
+                <p>Envíame un mensaje y estaré encantado de atenderte</p>
             </div>
         </div>
     </section>
