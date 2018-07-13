@@ -22,10 +22,12 @@ body {
 h1 en el header de sección: 5rem
 h1 en el header de section/post: 3.5rem */
 
-
-/* .h1-main {
-    font-size: 1.25rem;
+.h1-main {
+    font-size: 1.1rem;
 }
+
+
+/*
 .h1-section {
     font-size: 5rem;
 }
@@ -39,7 +41,7 @@ body>header h1 {
 }
 
 section h1 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 section#full_post h1 {
@@ -86,8 +88,9 @@ nav.menu-top,
 nav.menu-icon {
     position: absolute;
     z-index: 1;
-    right: 20%;
-    top: 1rem;
+    right: 5%;
+    left: 40%;
+    top: 0.5rem;
     font-weight: 800;
     font-size: 0.75rem;
     text-transform: uppercase;
