@@ -3,8 +3,8 @@
 :root {
     --color-texto: white;
     --color-fondo: black;
-    --color-boton: darkcyan;
-    --color-autores: darkgrey;
+    --color-boton: #2A85B1;
+    --color-fondo-gris: darkgrey;
 }
 
 
@@ -84,13 +84,22 @@ nav.menu-top {
     display: none;
 }
 
-nav.menu-top,
-nav.menu-icon {
+nav.menu-top {
     position: absolute;
     z-index: 1;
     right: 5%;
     left: 40%;
-    top: 0.5rem;
+    top: 1rem;
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+nav.menu-icon {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    top: 1rem;
     font-weight: 800;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -108,11 +117,33 @@ nav a {
 }
 
 nav.menu-icon {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    top: 0.5rem;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+nav.menu-top li,
+footer nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: .5rem 1rem;
+    transition: all 0.8s linear;
+}
+
+nav.menu-icon {
+    background-color: white;
     font-size: 1.2rem;
 }
 
 nav.menu-bottom {
-    background-color: var(--color-autores)
+    background-color: white;
 }
 
 body>header {
@@ -142,16 +173,24 @@ section#home header {
     background-image: url(./assets/code-bg.png);
 }
 
+section#video-about-me header {
+    background-image: url(./assets/aficiones-bg.jpg)
+}
+
 section#about header {
-    background-image: url(./assets/about-bg.jpg)
+    background-image: url(./assets/bilbao-bg.jpg)
+}
+
+section#studies header {
+    background-image: url(./assets/knowledge-bg.jpg)
+}
+
+section#experience header {
+    background-image: url(./assets/experience-bg.jpg)
 }
 
 section#contact header {
     background-image: url(./assets/contact-bg.jpg)
-}
-
-section#full_post header {
-    background-image: url(./assets/post-bg.jpg)
 }
 
 section .title-wrapper {
@@ -171,7 +210,7 @@ section header::after {
     bottom: 0;
     right: 0;
     background-color: var(--color-texto);
-    opacity: 0.5;
+    opacity: 0.66;
 }
 
 section .content-wrapper,
@@ -193,7 +232,7 @@ section .boton-wrapper {
 
 section .boton {
     display: block;
-    color: var(--color-fondo);
+    color: white;
     background-color: var(--color-boton);
     font-size: 14px;
     font-weight: 800;
@@ -245,7 +284,7 @@ section#home header h1 {
 section#home article {
     margin-top: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--color-autores)
+    border-bottom: 1px solid var(--color-fondo-gris)
 }
 
 section#home article>p {
@@ -260,7 +299,7 @@ section#home footer {
 }
 
 section#home footer .autor {
-    color: var(--color-autores);
+    color: var(--color-fondo-gris);
     font-weight: 900;
 }
 
@@ -287,7 +326,7 @@ section#contact ul {
 section#contact li {
     padding-top: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--color-autores);
+    border-bottom: 1px solid var(--color-fondo-gris);
 }
 
 section#contact li.form-group label {
@@ -300,7 +339,7 @@ section#contact li.form-group textarea {
     border: 0px solid;
     font-size: 1.5rem;
     font-family: 'Lora', serif;
-    color: var(--color-autores);
+    color: var(--color-fondo-gris);
 }
 
 
@@ -335,7 +374,7 @@ section#contact li.form-group textarea {
 
 body>footer {
     margin-top: 2rem;
-    border-top: 1px solid var(--color-autores);
+    border-top: 1px solid var(--color-fondo-gris);
     padding-top: 3rem;
     text-align: center;
 }
@@ -345,7 +384,7 @@ body>footer nav {
 }
 
 body>footer small {
-    color: var(--color-autores);
+    color: var(--color-fondo-gris);
 }
 
 @media screen and (min-width: 900px) {
@@ -356,11 +395,11 @@ body>footer small {
     nav.menu-top {
         display: block;
         position: fixed;
-        background-color: var(--color-autores)
+        background-color: white
     }
     body>nav a:hover {
-        color: antiquewhite;
-        background-color: var(--color-autores);
+        color: white;
+        background-color: black;
         transform: scale(1.2);
     }
     section .content-wrapper,
