@@ -5,18 +5,15 @@ export class FormContact {
         this.oInputEmail = document.querySelector('#email')
         this.oInputPhone = document.querySelector('#phone')
         this.oTextMessage = document.querySelector('#message')
-        this.oCheckCondiciones = document.querySelector('#condiciones')
-        this.oRadioOpciones = document.querySelectorAll('[name=opciones]')
         this.oSelectSeleccion = document.querySelector('#selection')
-
+        this.oTextareaOtro = document.querySelector('#message-otro')
         this.oData = {
             name: '',
             email: '',
             phone: '',
             message: '',
-            condiciones: '',
-            opciones: '',
-            seleccion: ''
+            seleccion: '',
+            otro: ''
         }
     }
 
@@ -26,20 +23,25 @@ export class FormContact {
             email: this.oInputEmail.value,
             phone: this.oInputPhone.value,
             message: this.oTextMessage.value,
-            condiciones: this.oCheckCondiciones.checked,
-            opciones: this.processRadio(this.oRadioOpciones),
-            seleccion: this.oSelectSeleccion.options[this.oSelectSeleccion.selectedIndex].value
+            seleccion: this.oSelectSeleccion.options[this.oSelectSeleccion.selectedIndex].value,
+            otro: this.oTextareaOtro.value
         }
+        let textarea = this.oTextareaOtro;
+        let select = this.oSelectSeleccion.value;
 
         console.dir(this.oData)
     }
 
-    processRadio(aNodos) {
-        let value
-        aNodos.forEach(
-            (item) => { if (item.checked) { value = item.value } }
-        )
-        return value
-    }
+    mostrarTextarea() {
+        let textarea = this.oTextareaOtro;
+        let select = this.oSelectSeleccion.value;
 
+        textarea.style.display = 'none';
+
+        if (select == 'op4') {
+            textarea.style.display = 'inline-block';
+        } else {
+            textarea.style.display = 'none';;
+        }
+    }
 }
